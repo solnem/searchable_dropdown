@@ -595,7 +595,12 @@ class DropdownSearchState<T> extends State<DropdownSearch<T>> {
       useRootNavigator: widget.popupProps.modalBottomSheetProps.useRootNavigator,
       transitionAnimationController: widget.popupProps.modalBottomSheetProps.animation,
       constraints: widget.popupProps.modalBottomSheetProps.constraints,
-      builder: (ctx) => _popupWidgetInstance(),
+      builder: (ctx) {
+        return Padding(
+          padding: EdgeInsets.only(bottom: MediaQuery.of(ctx).viewInsets.bottom),
+          child: _popupWidgetInstance(),
+        );
+      }
     );
   }
 
