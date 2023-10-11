@@ -1,3 +1,6 @@
+## [5.0.7] - 2023.10.12
+* Fix accommodate for keyboard height on bottom sheet modal
+
 ## [5.0.6] - 2023.02.26
 * Fix search delay [542](https://github.com/salim-lachdhaf/searchable_dropdown/issues/542)
 * Fix search delay [485](https://github.com/salim-lachdhaf/searchable_dropdown/issues/485)
